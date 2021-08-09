@@ -9,12 +9,11 @@ import lombok.Builder;
 import lombok.Data;
 
 @Data
-@Builder
 @Entity
 public class Cliente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private final Long id;
+	private Long id;
 
-	private final String nome;
+	private String nome;
 }
